@@ -21,10 +21,13 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    { src: '~/assets/scss/common.scss', lang: 'scss' },
+    { src: '~/assets/css/reset.css'},
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '@/plugins/commonFunc'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -38,9 +41,24 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
+    // '@nuxtjs/style-resources'
   ],
+
+  styleResources: {
+    scss: [
+      '~/assets/scss/_palette.scss',
+      '~/assets/scss/_colors.scss',
+      '~/assets/scss/_mixin.scss',
+    ]
+  },
+
+  router: {
+    base: '/question'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    extend (config, ctx) {
+    }
   }
 }
