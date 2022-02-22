@@ -1,0 +1,21 @@
+{
+    "questionList": [
+        {
+            "no": 1,
+            "question": "段落を指定するためのタグは次のうちどれか。",
+            "choice": [
+                "p", "span", "pre", "div"
+            ],
+            "answer": "p" 
+        },
+        {
+            "no": 2,
+            "question": "リンクの出発点と到達点を指定するために使われるタグは次のうちどれか。",
+            "choice": [
+                "p", "span", "a", "table"
+            ],
+            "answer": "a" 
+        }
+        
+    ]
+}
